@@ -3,10 +3,10 @@ import styles from './LocationSelector.module.css';
 
 
 const provinces = {
-    서울특별시: ["강서구", "용산구", "서초구"],
-    부산광역시: ["수영구", "해운대구", "남구"],
-    창원특례시: ["진해구", "성산구", "마산합포구"]
-};
+    서울: ["강서", "용산", "서초"],
+    부산: ["수영", "해운대", "남구"],
+    창원: ["진해", "성산", "마산"]
+}
 
 function LocationSelector() {
     const [selectedProvince, setSelectedProvince] = useState('');
@@ -49,9 +49,9 @@ function LocationSelector() {
 
 function getDistricts(province) {
     const districts = {
-        서울특별시: ["강서구", "용산구", "서초구"],
-        부산광역시: ["수영구", "해운대구", "남구"],
-        창원특례시: ["진해구", "성산구", "마산합포구"]
+        서울: ["강서", "용산", "서초"],
+        부산: ["수영", "해운대", "남구"],
+        창원: ["진해", "성산", "마산"]
     };
     return districts[province] || [];
 }

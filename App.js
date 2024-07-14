@@ -4,15 +4,13 @@ import LocationSelector from './components/LocationSelector';
 import PriceRange from './components/Price';
 import Search from './components/Search';
 import Header from './components/Header';
+import MainPage from './components/MainPage';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <LocationSelector />
-      <PriceRange />
-      <Search />
+      <MainPage />
     </div>
   );
 }
